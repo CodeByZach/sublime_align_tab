@@ -1,13 +1,5 @@
 # AlignTab
 
-[![Build Status](https://travis-ci.org/randy3k/AlignTab.svg?branch=master)](https://travis-ci.org/randy3k/AlignTab)
-[![Build status](https://ci.appveyor.com/api/projects/status/github/randy3k/AlignTab?branch=master&svg=true)](https://ci.appveyor.com/project/randy3k/AlignTab)
-[![Coverage Status](https://coveralls.io/repos/github/randy3k/AlignTab/badge.svg?branch=master)](https://coveralls.io/github/randy3k/AlignTab?branch=master)
-<a href="https://packagecontrol.io/packages/AlignTab"><img src="https://packagecontrol.herokuapp.com/downloads/AlignTab.svg"></a>
-<a href="https://www.paypal.me/randy3k/5usd" title="Donate to this project using Paypal"><img src="https://img.shields.io/badge/paypal-donate-blue.svg" /></a>
-<a href="https://liberapay.com/randy3k/donate"><img src="http://img.shields.io/liberapay/receives/randy3k.svg?logo=liberapay"></a>
-
-
 The most flexible alignment plugin for Sublime Text 3. This plugin is inspired by the excellent VIM plugin, [tabular](https://github.com/godlygeek/tabular).
 
 ST2 support is deprecated but however, it is still possible to install AlignTab on ST2 via Package Control.
@@ -73,7 +65,7 @@ Hit <kbd>ESC</kbd> or use the command `AlignTab: Exit Table Mode` to exit table 
 
 ## Examples
 
-Some simple examples. You can also contribute your examples [there](https://github.com/randy3k/AlignTab/wiki/Examples).
+Some simple examples. You can also contribute your examples [there](https://github.com/EatBreatheCode/sublime_align_tab/wiki/Examples).
 
 ## Keybinds
 
