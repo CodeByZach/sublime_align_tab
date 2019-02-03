@@ -1,6 +1,5 @@
-## git
-*.gitignore         export-ignore
-*.gitattributes     export-ignore
+/.gitignore     export-ignore
+/.gitattributes export-ignore
 
-## unit testing
-tests/              export-ignore
+# Files & folders that should not be included in production.
+/tests/ export-ignore

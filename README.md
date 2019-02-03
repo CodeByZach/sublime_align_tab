@@ -25,26 +25,26 @@ ST2 support is deprecated but however, it is still possible to install AlignTab 
 - The option controls column justification, padding and maximum number of splits. A general syntax of options is `([rlc][0-9]*)*(f[0-9]*)?`.
 - The numbers after `r`, `c` or `l` determine how many spaces will be added after columns and the number after `f` controls how many matches will be made based `<regex>`.
 - For example, `c2r3f1` means
-  - first column is centered followed by 2 spaces
-  - second column is right-flushed followed by 3 spaces
-  - only the first match is used
+	- first column is centered followed by 2 spaces
+	- second column is right-flushed followed by 3 spaces
+	- only the first match is used
 - If the number after `[rlc]` is omitted, 1 space will be added after each column.
 - If the number after `f` is omitted, only the first match will be used.
 - The entire option could be omitted (i.e., input only the regular expression). In that case, default option, `l1f0` will be used. It means:
-  - All columns are left-justified.
-  - A space is added after each column.
-  - All matched delimiters are aligned.
+	- All columns are left-justified.
+	- A space is added after each column.
+	- All matched delimiters are aligned.
 
 
 ## More about regex and options
 
 - Use non-capturing parenthese `(?:regex)` instread of capturing parenthese.
 - Delimiter is also treated as a column.
-  - For example, `=/rcl` means the the column before `=` will be right-justifed and the column after `=` will be left-justified. And `=` will be centered (however, it doesn't matter as `=` is of length 1).
+	- For example, `=/rcl` means the the column before `=` will be right-justifed and the column after `=` will be left-justified. And `=` will be centered (however, it doesn't matter as `=` is of length 1).
 - The option for alignment cycles through the columns. <br>
-  - For example, `regex/rl` means all odd columns will be right-justified and all even columns will be left-justified.
+	- For example, `regex/rl` means all odd columns will be right-justified and all even columns will be left-justified.
 - The symbol `*` repeats the preceeding justification flags.
-  - For example `r*3` equals `rrr`, and `(cr3)*2` equals `cr3cr3`.
+	- For example `r*3` equals `rrr`, and `(cr3)*2` equals `cr3cr3`.
 - (Experimental) Besides `r`, `c` and `l`, there is a new `u` flag which stands for "unjustified".
 
 ## Live Preview Mode
@@ -71,47 +71,48 @@ Some simple examples. You can also contribute your examples [there](https://gith
 
 If you are interested in getting a keybind for live preview mode, add the following in your user keybinds file.
 ```
- {
-   "keys": ["super+shift+a"], "command": "align_tab",
-   "args" : {"live_preview" : true}
- }
+{
+	"keys": ["super+shift+a"], "command": "align_tab",
+	"args" : {"live_preview" : true}
+}
 ```
 
 
 For frequent patterns, you can consider the following in your user keybinds file. Change the keybind and the `user_input` for your purpose.
 
 ```
- //align =
-  {
-    "keys": ["super+shift+a"], "command": "align_tab",
-    "args" : {"user_input" : "=/f"}
-  }
+// align =
+{
+	"keys": ["super+shift+a"], "command": "align_tab",
+	"args" : {"user_input" : "=/f"}
+}
 ```
 
 or syntex specific keybind.
 
 ```
-  // latex align keybind, to align & and \\, but not \&
-    {
-    	"keys": ["super+shift+a"], "command": "align_tab",
-        "args" : {"user_input" : "(?<!\\\\)&|\\\\\\\\"},
-        "context":[
-            { "key": "selector", "operator": "equal", "operand": "text.tex.latex" }
-        ]
-    }
+// latex align keybind, to align & and \\, but not \&
+{
+	"keys": ["super+shift+a"], "command": "align_tab",
+	"args" : {"user_input" : "(?<!\\\\)&|\\\\\\\\"},
+	"context":[
+		{ "key": "selector", "operator": "equal", "operand": "text.tex.latex" }
+	]
+}
 ```
 
 
 
 ## Named patterns
 
-To make it easier to remember complex patterns, you can save them in a dictionary in the settings file. To edit the patterns, launch `Preferences: AlignTab Settings`. Use the name as key and the regex as value. For examples,
+To make it easier to remember complex patterns, you can save them in the "named_patterns" object. To define your own patterns patterns, use the name as "key" and the regex as "value". The "value" can also contain an array of patterns.
+
+For example:
 
 ```
 "named_patterns": {
-    "eq" : "=/f",
-    // right hand side could also be an array of inputs
-    "ifthen" : ["=/f", "\\?/f", ":/f"]
+	"patternnameone" : "=/f",
+	"patternnametwo" : ["=/f", "\\?/f", ":/f"]
 }
 ```
 
@@ -119,22 +120,23 @@ You then just use the name instead of the pattern in the input field.
 
 ## Custom Context Menu
 
-To define new item in the context menu, launch `Preferences: AlignTab Context Menu` and add, for example
+To define new item in the context menu, create a file at `/User/AlignTab/Context.sublime-menu` and add, for example:
 
 ```
 [
-   {"caption" : "-"},
-    {
-      "id": "aligntab",
-      "caption": "AlignTab",
-      "children": [
-          {
-          "caption" : "{",
-          "command" : "align_tab",
-          "args"    : {"user_input" : "\\{"}
-          }
-      ]
-  }
+	{ "caption" : "-" },
+	{
+		"id": "aligntab",
+		"caption": "AlignTab",
+		"children": [
+		{
+			"caption": "{",
+			"command": "align_tab",
+			"args"   : {
+				"user_input" : "\\{"}
+			}
+		]
+	}
 ]
 ```
 

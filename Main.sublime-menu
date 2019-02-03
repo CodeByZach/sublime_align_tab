@@ -16,39 +16,33 @@
 						"children": [
 							{
 								"caption": "First Equal =",
-								"command": "align_tab", "args": {
-									"user_input" : "=/f"
-								}
+								"command": "align_tab",
+								"args": { "user_input" : "=/f" }
 							},
 							{
 								"caption" : "First Colon :",
-								"command" : "align_tab", "args": {
-									"user_input" : ":/f"
-								}
+								"command" : "align_tab",
+								"args": { "user_input" : ":/f" }
 							},
 							{
 								"caption": "Fat Arrow =>",
-								"command": "align_tab", "args": {
-									"user_input" : "=>"
-								}
+								"command": "align_tab",
+								"args": { "user_input" : "=>" }
 							},
 							{
 								"caption" : "Ampersands &",
-								"command" : "align_tab", "args": {
-									"user_input" : "&"
-								}
+								"command" : "align_tab",
+								"args": { "user_input" : "&" }
 							},
 							{
 								"caption" : "Vertical Bars |",
-								"command" : "align_tab", "args": {
-									"user_input" : "\\|"
-								}
+								"command" : "align_tab",
+								"args": { "user_input" : "\\|" }
 							},
 							{
 								"caption" : "Spaces",
-								"command" : "align_tab", "args": {
-									"user_input" : "\\s*/l1l0"
-								}
+								"command" : "align_tab",
+								"args": { "user_input" : "\\s*/l1l0" }
 							},
 							{
 								"caption": "Exit Table Mode",
@@ -78,14 +72,28 @@
 						[
 							{
 								"caption": "Settings",
-								"command": "edit_settings", "args": {
-									"base_file": "${packages}/AlignTab/AlignTab.sublime-settings"
+								"command": "edit_settings",
+								"args":
+								{
+									"base_file": "${packages}/AlignTab/AlignTab.sublime-settings",
+									"default": "{\n$0\n}\n"
+								}
+							},
+							{
+								"caption": "Key Bindings",
+								"command": "edit_settings",
+								"args":
+								{
+									"base_file": "${packages}/AlignTab/Default.sublime-keymap",
+									"user_file": "${packages}/User/Default (${platform}).sublime-keymap",
+									"default": "[\n$0\n]\n"
 								}
 							},
 							{ "caption": "-" },
 							{
 								"caption": "README",
-								"command": "open_file", "args":
+								"command": "open_file",
+								"args":
 								{
 									"file": "${packages}/AlignTab/README.md"
 								}
