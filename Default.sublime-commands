@@ -19,10 +19,11 @@
 	},
 	{
 		"caption": "Preferences: AlignTab Settings",
-		"command": "edit_settings",
+		"command": "z_edit_settings",
 		"args":
 		{
 			"base_file": "${packages}/AlignTab/AlignTab.sublime-settings",
+			"user_file": "${packages}/User/AlignTab/AlignTab.sublime-settings",
 			"default": "{\n\t$0\n}\n"
 		}
 	}

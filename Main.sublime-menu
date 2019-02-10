@@ -72,31 +72,85 @@
 						[
 							{
 								"caption": "Settings",
-								"command": "edit_settings",
+								"command": "z_edit_settings",
 								"args":
 								{
 									"base_file": "${packages}/AlignTab/AlignTab.sublime-settings",
-									"default": "{\n$0\n}\n"
+									"user_file": "${packages}/User/AlignTab/AlignTab.sublime-settings",
+									"default": "{\n\t$0\n}\n"
 								}
 							},
 							{
 								"caption": "Key Bindings",
-								"command": "edit_settings",
+								"command": "z_edit_settings",
 								"args":
 								{
 									"base_file": "${packages}/AlignTab/Default.sublime-keymap",
-									"user_file": "${packages}/User/Default (${platform}).sublime-keymap",
-									"default": "[\n$0\n]\n"
+									"user_file": "${packages}/User/AlignTab/Default (${platform}).sublime-keymap",
+									"default": "[\n\t$0\n]\n"
+								}
+							},
+							{
+								"caption": "Menus",
+								"children":
+								[
+									{
+										"caption": "Context Menu",
+										"command": "z_edit_settings",
+										"args":
+										{
+											"file": "${packages}/AlignTab/Context.sublime-menu",
+											"is_parent_setting": "1",
+											"contents": "[\n\t$0\n]\n"
+										}
+									},
+									{
+										"caption": "Side Bar Menu",
+										"command": "z_edit_settings",
+										"args":
+										{
+											"file": "${packages}/AlignTab/Side Bar.sublime-menu",
+											"is_parent_setting": "1",
+											"contents": "[\n\t$0\n]\n"
+										}
+									},
+									{
+										"caption": "Tab Menu",
+										"command": "z_edit_settings",
+										"args":
+										{
+											"file": "${packages}/AlignTab/Tab Context.sublime-menu",
+											"is_parent_setting": "1",
+											"contents": "[\n\t$0\n]\n"
+										}
+									},
+									{
+										"caption": "Main Menu",
+										"command": "z_edit_settings",
+										"args":
+										{
+											"file": "${packages}/AlignTab/Main.sublime-menu",
+											"is_parent_setting": "1",
+											"contents": "[\n\t$0\n]\n"
+										}
+									}
+								]
+							},
+							{
+								"caption": "Commands",
+								"command": "z_edit_settings",
+								"args":
+								{
+									"file": "${packages}/AlignTab/Default.sublime-commands",
+									"is_parent_setting": "1",
+									"default": "[\n\t$0\n]\n"
 								}
 							},
 							{ "caption": "-" },
 							{
 								"caption": "README",
 								"command": "open_file",
-								"args":
-								{
-									"file": "${packages}/AlignTab/README.md"
-								}
+								"args": { "file": "${packages}/AlignTab/README.md" }
 							}
 						]
 					}
