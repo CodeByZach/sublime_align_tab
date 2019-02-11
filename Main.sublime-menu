@@ -72,21 +72,20 @@
 						[
 							{
 								"caption": "Settings",
-								"command": "z_edit_settings",
+								"command": "edit_settings",
 								"args":
 								{
 									"base_file": "${packages}/AlignTab/AlignTab.sublime-settings",
-									"user_file": "${packages}/User/AlignTab/AlignTab.sublime-settings",
 									"default": "{\n\t$0\n}\n"
 								}
 							},
 							{
 								"caption": "Key Bindings",
-								"command": "z_edit_settings",
+								"command": "edit_settings",
 								"args":
 								{
 									"base_file": "${packages}/AlignTab/Default.sublime-keymap",
-									"user_file": "${packages}/User/AlignTab/Default (${platform}).sublime-keymap",
+									"user_file": "${packages}/User/Default (${platform}).sublime-keymap",
 									"default": "[\n\t$0\n]\n"
 								}
 							},
