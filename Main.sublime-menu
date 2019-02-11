@@ -79,6 +79,7 @@
 									"default": "{\n\t$0\n}\n"
 								}
 							},
+							{ "caption": "-" },
 							{
 								"caption": "Key Bindings",
 								"command": "edit_settings",
@@ -89,6 +90,7 @@
 									"default": "[\n\t$0\n]\n"
 								}
 							},
+							{ "caption": "-" },
 							{
 								"caption": "Menus",
 								"children":
