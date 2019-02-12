@@ -100,9 +100,9 @@
 										"command": "z_edit_settings",
 										"args":
 										{
-											"file": "${packages}/AlignTab/Context.sublime-menu",
 											"is_parent_setting": "1",
-											"contents": "[\n\t$0\n]\n"
+											"base_file": "${packages}/AlignTab/Context.sublime-menu",
+											"default": "[\n\t$0\n]\n"
 										}
 									},
 									{
@@ -110,9 +110,9 @@
 										"command": "z_edit_settings",
 										"args":
 										{
-											"file": "${packages}/AlignTab/Side Bar.sublime-menu",
 											"is_parent_setting": "1",
-											"contents": "[\n\t$0\n]\n"
+											"base_file": "${packages}/AlignTab/Side Bar.sublime-menu",
+											"default": "[\n\t$0\n]\n"
 										}
 									},
 									{
@@ -120,9 +120,9 @@
 										"command": "z_edit_settings",
 										"args":
 										{
-											"file": "${packages}/AlignTab/Tab Context.sublime-menu",
 											"is_parent_setting": "1",
-											"contents": "[\n\t$0\n]\n"
+											"base_file": "${packages}/AlignTab/Tab Context.sublime-menu",
+											"default": "[\n\t$0\n]\n"
 										}
 									},
 									{
@@ -130,9 +130,9 @@
 										"command": "z_edit_settings",
 										"args":
 										{
-											"file": "${packages}/AlignTab/Main.sublime-menu",
 											"is_parent_setting": "1",
-											"contents": "[\n\t$0\n]\n"
+											"base_file": "${packages}/AlignTab/Main.sublime-menu",
+											"default": "[\n\t$0\n]\n"
 										}
 									}
 								]
@@ -142,8 +142,8 @@
 								"command": "z_edit_settings",
 								"args":
 								{
-									"file": "${packages}/AlignTab/Default.sublime-commands",
 									"is_parent_setting": "1",
+									"base_file": "${packages}/AlignTab/Default.sublime-commands",
 									"default": "[\n\t$0\n]\n"
 								}
 							},
