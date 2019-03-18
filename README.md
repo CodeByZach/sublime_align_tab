@@ -16,12 +16,12 @@ ST2 support is deprecated but however, it is still possible to install AlignTab 
 
 - If you only want simple and quick alignment, the predefined alignment will help.
 
-<img width=650 src="https://user-images.githubusercontent.com/1690993/30779107-029a5934-a0b5-11e7-8523-7a3bb657b8f2.png">
+<img width=650 src="docs/30779107-029a5934-a0b5-11e7-8523-7a3bb657b8f2.png">
 
 ## More complicated usage
 
 - Open `AlignTab` in Command Palette `C+Shift+p` and enter the input in the form of `<regex>/<option>`.
-- To learn more about regular expression, visit [here](http://www.regular-expressions.info) and [here](https://docs.python.org/2/library/re.html).
+- To learn more about regular expression, visit [here](https://www.regular-expressions.info) and [here](https://docs.python.org/2/library/re.html).
 - The option controls column justification, padding and maximum number of splits. A general syntax of options is `([rlc][0-9]*)*(f[0-9]*)?`.
 - The numbers after `r`, `c` or `l` determine how many spaces will be added after columns and the number after `f` controls how many matches will be made based `<regex>`.
 - For example, `c2r3f1` means
@@ -49,11 +49,11 @@ ST2 support is deprecated but however, it is still possible to install AlignTab 
 
 ## Live Preview Mode
 
-<img width=650 src="https://cloud.githubusercontent.com/assets/1690993/23576654/4d4fe048-0079-11e7-9fed-ece0850b1312.gif">
+<img width=650 src="docs/4d4fe048-0079-11e7-9fed-ece0850b1312.gif">
 
 ## Table Mode
 
-<img width=650 src="https://cloud.githubusercontent.com/assets/1690993/23576656/567bacec-0079-11e7-86ce-deaab5907acb.gif">
+<img width=650 src="docs/567bacec-0079-11e7-86ce-deaab5907acb.gif">
 
 Hit <kbd>ESC</kbd> or use the command `AlignTab: Exit Table Mode` to exit table mode.
 
@@ -146,8 +146,8 @@ To define new item in the context menu, create a file at `/User/AlignTab/Context
 AlignTab supoorts CJK characters, but you have to choose a correct font face and font size.
 To my knowledge, `MinCho` works on all Chinese, Japanese and Korean.
 
-<img width=300 src="https://cloud.githubusercontent.com/assets/1690993/23576648/13fb5020-0079-11e7-9ffa-a10d5443192d.png">
+<img width=300 src="docs/13fb5020-0079-11e7-9ffa-a10d5443192d.png">
 
 ## License
 
-AlignTab is licensed under the MIT License.
+AlignTab is licensed under the [MIT license](LICENSE).
