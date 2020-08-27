@@ -1,4 +1,5 @@
 # AlignTab
+[![Latest Release](https://img.shields.io/github/tag/EatBreatheCode/sublime_align_tab.svg?label=version)](https://github.com/EatBreatheCode/sublime_align_tab/releases)
 
 The most flexible alignment plugin for Sublime Text 3. This plugin is inspired by the excellent VIM plugin, [tabular](https://github.com/godlygeek/tabular).
 
