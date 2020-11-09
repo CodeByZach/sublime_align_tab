@@ -1,5 +1,5 @@
 # AlignTab
-[![Latest Release](https://img.shields.io/github/tag/EatBreatheCode/sublime_align_tab.svg?label=version)](https://github.com/EatBreatheCode/sublime_align_tab/releases)
+[![Latest Release](https://img.shields.io/github/tag/CodeByZach/sublime_align_tab.svg?label=version)](https://github.com/CodeByZach/sublime_align_tab/releases)
 
 The most flexible alignment plugin for Sublime Text 3. This plugin is inspired by the excellent VIM plugin, [tabular](https://github.com/godlygeek/tabular).
 
@@ -66,7 +66,7 @@ Hit <kbd>ESC</kbd> or use the command `AlignTab: Exit Table Mode` to exit table 
 
 ## Examples
 
-Some simple examples. You can also contribute your examples [there](https://github.com/EatBreatheCode/sublime_align_tab/wiki/Examples).
+Some simple examples. You can also contribute your examples [there](https://github.com/CodeByZach/sublime_align_tab/wiki/Examples).
 
 ## Keybinds
 
