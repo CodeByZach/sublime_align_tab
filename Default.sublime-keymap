@@ -1,16 +1,24 @@
 [
-	{ "keys": ["up"], "command": "align_tab_history", "args": {"backwards": true}, "context":
+	{
+		"keys": ["up"],
+		"command": "align_tab_history",
+		"args": { "backwards": true },
+		"context":
 		[
 			{ "key": "setting.AlignTabInputPanel", "operator": "equal", "operand": true }
 		]
 	},
-	{ "keys": ["down"], "command": "align_tab_history", "context":
-		[
+	{
+		"keys": ["down"],
+		"command": "align_tab_history",
+		"context": [
 			{ "key": "setting.AlignTabInputPanel", "operator": "equal", "operand": true }
 		]
 	},
-	{ "keys": ["escape"], "command": "align_tab_clear_mode", "context":
-		[
+	{
+		"keys": ["escape"],
+		"command": "align_tab_clear_mode",
+		"context": [
 			{ "key": "setting.AlignTabTableMode", "operator": "equal", "operand": true }
 		]
 	}
