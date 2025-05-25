@@ -1,7 +1,7 @@
 [
 	{ "caption": "AlignTab",                    "command": "align_tab" },
-	{ "caption": "AlignTab: Table Mode",        "command": "align_tab",           "args": { "mode" : true } },
-	{ "caption": "AlignTab: Live Preview Mode", "command": "align_tab",           "args": { "live_preview" : true } },
+	{ "caption": "AlignTab: Table Mode",        "command": "align_tab",              "args": { "mode" : true } },
+	{ "caption": "AlignTab: Live Preview Mode", "command": "align_tab",              "args": { "live_preview" : true } },
 	{ "caption": "AlignTab: Exit Table Mode",   "command": "align_tab_clear_mode" },
 	{
 		"caption": "Preferences: AlignTab Settings",
